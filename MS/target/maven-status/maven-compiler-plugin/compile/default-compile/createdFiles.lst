@@ -1,0 +1,5 @@
+com\ms\controller\UserController.class
+com\ms\entity\UserBo.class
+com\ms\MSApplication.class
+com\ms\entity\SomeBean.class
+com\ms\controller\FilteringController.class
