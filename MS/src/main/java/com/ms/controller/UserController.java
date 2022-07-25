@@ -21,7 +21,7 @@ import io.swagger.v3.oas.annotations.parameters.RequestBody;
 @RestController
 public class UserController {
 
-	@Autowired
+	@Autowired 
 	private MessageSource messageSource;
 	
 	static List<UserBo> userBoList=new ArrayList();
@@ -33,9 +33,9 @@ public class UserController {
 	}
 	
 	@PostMapping(path = "/user_info/{id}")
-	public ResponseEntity<UserBo> user_info(@PathVariable("id") String id
-			,@RequestBody UserBo userBo) 
+	public ResponseEntity<UserBo> user_info(@PathVariable("id") String id) 
 	{
+		UserBo userBo=new UserBo();
 		int idc=Integer.parseInt(id);
 		userBo.setDateOfBirth(new Date());
 		userBo.setFirstName("Mit");
