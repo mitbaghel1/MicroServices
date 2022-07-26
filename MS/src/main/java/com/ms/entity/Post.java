@@ -18,7 +18,7 @@ public class Post {
 	private String description;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JsonIgnore//Beacuse recursive loop happen so use user called post and post called user
+	@JsonIgnore//Because recursive loop happen so use user called post and post called user
 	private UserBo user;
 
 	public Integer getId() {
