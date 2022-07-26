@@ -1,0 +1,52 @@
+//content negotiation
+Accept Xml
+jsckson-xml-api
+
+
+//Swagger Api 
+opne api specification documentation for API Doc
+UI name is Swagger UI
+
+---  Spring Actuator monitoring application
+	They Enable Most of the Actuator Fetures
+	management.endpoints.web.exposure.include=*
+
+   http://localhost:8080/v3/api-docs                 ::For Chrome View Info Swagger
+   http://localhost:8080/swagger-ui/index.html#/     ::For Swagger View Info Swagger
+   http://localhost:8080/actuator                    ::For View Actuator
+   http://localhost:8080/actuator/beans              ::For View Actuator beans Many Of Other We can view
+   
+-- visualizing Api with HAL Explorer
+	http://localhost:8080/explorer/index.html#uri=http://localhost:8080/
+	HAl Explorer is use for manage application api and like postman 
+	Hal Explorer is use for explor api in easy way
+	But Your project support HATEOS
+	
+-- implementing Dynamic Filering for Restful Service
+
+
+-- Versioning Of Rest API
+	
+	
+Richardson Maturity Model For Rest API
+		--Level 3 HATEOAS
+		
+MicroServices
+	Rest
+	& small Well Chosen Deployable Units
+	& Cloud Enabled
+
+Monolitihic 
+
+
+Dynamic Scale Up and Scale Down using Dynamic Load Balancing
+Pack Of Cards
+Fault Tolerance
+
+
+Bounded Context
+Visibility
+
+
+
+Spring Cloud
