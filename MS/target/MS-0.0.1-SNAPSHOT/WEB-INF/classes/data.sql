@@ -1,0 +1,1 @@
+insert into user value(1,'mit',SYSDATE());

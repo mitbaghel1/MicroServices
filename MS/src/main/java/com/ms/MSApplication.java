@@ -11,6 +11,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication(scanBasePackages= {"com.ms.*"})
 public class MSApplication {
  public static void main(String[] args) {
+	 
 	 SpringApplication.run(MSApplication.class, args);
  }
 }

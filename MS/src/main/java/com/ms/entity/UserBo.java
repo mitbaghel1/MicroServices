@@ -1,15 +1,16 @@
 package com.ms.entity;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.OneToMany;
 
 @Entity
-@Table(name="user")
+//@Table(name="user")
 public class UserBo {
 
 	
@@ -17,9 +18,17 @@ public class UserBo {
 	@GeneratedValue
 	private int id;
 	
-	
 	private String firstName;
 	private Date dateOfBirth;
+	
+	@OneToMany(mappedBy = "user")
+	private List<Post> posts;
+	
+	public UserBo()
+	{
+		
+	}
+	
 	public int getId() {
 		return id;
 	}
@@ -38,6 +47,7 @@ public class UserBo {
 	public void setDateOfBirth(Date dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
+	
 	@Override
 	public String toString() {
 		return "UserBo [id=" + id + ", firstName=" + firstName + ", dateOfBirth=" + dateOfBirth + ", getId()=" + getId()
@@ -60,6 +70,13 @@ public class UserBo {
 		return Objects.equals(dateOfBirth, other.dateOfBirth) && Objects.equals(firstName, other.firstName)
 				&& id == other.id;
 	}
-	
+
+	public List<Post> getPosts() {
+		return posts;
+	}
+
+	public void setPosts(List<Post> posts) {
+		this.posts = posts;
+	}
 	
 }
