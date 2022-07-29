@@ -1,10 +1,10 @@
 //content negotiation
 Accept Xml
-jsckson-xml-api
+jsckson-xml-API
 
 
-//Swagger Api 
-opne api specification documentation for API Doc
+//Swagger API 
+open API specification documentation for API Doc
 UI name is Swagger UI
 
 ---  Spring Actuator monitoring application
@@ -46,5 +46,7 @@ Fault Tolerance
 
 Bounded Context
 Visibility
+
+
 
 Spring Cloud
