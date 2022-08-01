@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
+<<<<<<< HEAD
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -11,13 +12,15 @@ import javax.persistence.OneToMany;
 
 @Entity
 //@Table(name="user")
+=======
+>>>>>>> 17e73b366bffee28fcc11b80cd5af5e2968f20ba
 public class UserBo {
 
-	
-	@Id
-	@GeneratedValue
 	private int id;
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 17e73b366bffee28fcc11b80cd5af5e2968f20ba
 	private String firstName;
 	private Date dateOfBirth;
 	

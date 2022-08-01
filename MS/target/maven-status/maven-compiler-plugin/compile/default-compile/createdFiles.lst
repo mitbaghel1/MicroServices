@@ -1,10 +1,5 @@
-com\ms\versioning\Name.class
-com\ms\versioning\PersonV1.class
-com\ms\versioning\PersonV2.class
+com\ms\controller\UserController.class
 com\ms\entity\UserBo.class
 com\ms\MSApplication.class
-com\ms\controller\FilteringController.class
-com\ms\repository\UserRepo.class
-com\ms\controller\UserController.class
 com\ms\entity\SomeBean.class
-com\ms\controller\PersonVersioningController.class
+com\ms\controller\FilteringController.class

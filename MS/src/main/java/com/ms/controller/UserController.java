@@ -24,7 +24,7 @@ import com.ms.repository.UserRepo;
 @RestController
 public class UserController {
 
-	@Autowired 
+	@Autowired
 	private MessageSource messageSource;
 	
 
@@ -42,9 +42,17 @@ public class UserController {
 		return messageSource.getMessage("good.morning.message",null,"Default Message1", locale);
 	}
 	
+<<<<<<< HEAD
 	@PostMapping(path = "/jpa/user_info")
 	public ResponseEntity<UserBo> user_info(@RequestBody UserBo userBo) 
 	{
+=======
+	@PostMapping(path = "/user_info/{id}")
+	public ResponseEntity<UserBo> user_info(@PathVariable("id") String id
+			,@RequestBody UserBo userBo) 
+	{
+		int idc=Integer.parseInt(id);
+>>>>>>> 17e73b366bffee28fcc11b80cd5af5e2968f20ba
 		userBo.setDateOfBirth(new Date());
 		UserBo userData=userRepo.save(userBo);
 		return  ResponseEntity.ok(userData);
